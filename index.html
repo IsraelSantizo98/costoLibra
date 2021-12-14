@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Calculadora de precios</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="centrar-texto">Calcular costo por Libra</h1>
+        <div class="container__form">
+            <form action="" class="form">
+                <div class="campo">
+                    <label for="precioProducto" class="campo__label">Precios</label>
+                    <input type="text" name="precioProducto" class="campo__input" id="precioProducto" placeholder="Ingrese">
+                </div>
+                <div class="campo">
+                    <label for="pesoProducto" class="campo__label">Peso</label>
+                    <input type="text" name="pesoProducto" class="campo__input" id="pesoProducto" placeholder="Ingrese">
+                </div>
+                <div class="campo__button">
+                    <button type="button" onclick="obtenerDatos()" class="btn btn--primario">Calcular</button>
+                </div>
+            </form>
+            <div class="container__resultado centrar-texto">
+                <h2 class="centrar-texto">Resultado</h2>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
