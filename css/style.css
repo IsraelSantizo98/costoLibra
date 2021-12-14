@@ -1,0 +1,99 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #784d3c;
+    --blanco: #fff;
+    --gris: #e1e1e1;
+    --negro: #000;
+    --btn-principal: #5EB1BF;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/** Globales **/
+h1, h2, h3, p{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2rem;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+p{
+    font-size: 3.2rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.centrar-texto{
+    text-align: center;
+}
+.margin-top{
+    margin-top: 6rem;
+}
+.btn{
+    padding: 0.5rem;
+}
+body{
+    font-size: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/** Form **/
+.container__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+.form{
+    padding: 4rem;
+    border: 1px solid #000;
+}
+.campo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+.campo__label{
+    text-align: right;
+}
+.campo__input{
+    padding: .5rem;
+}
+.campo__button{
+    text-align: center;
+}
+.btn{
+    display: block;
+    font-family: var(--fuenteHeading);
+    font-size: 1.8rem;
+    font-weight: 700; /*Bold*/
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    border: none;
+}
+@media (min-width: 768px){
+    .btn{
+        display: inline-block;
+    }
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn--primario{
+    background-color: var(--btn-principal);
+}
